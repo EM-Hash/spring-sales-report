@@ -10,7 +10,7 @@ public class Sale {
     //Constructor
     //Since shipping has to be calculated, it's not expected to be available when the Sale is constructed
     //It's also the only item that needs to be set after the Sale is constructed
-    Sale(String customer, String country, Double amount, Double tax){
+    public Sale(String customer, String country, Double amount, Double tax){
         this.customer = customer;
         this.country = country;
         this.amount = amount;
