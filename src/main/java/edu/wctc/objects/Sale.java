@@ -5,7 +5,7 @@ public class Sale {
     String country;
     Double amount;
     Double tax;
-    Double shipping;
+    Double shipping = null;
 
     //Constructor
     //Since shipping has to be calculated, it's not expected to be available when the Sale is constructed
