@@ -1,10 +1,14 @@
 package edu.wctc;
 
-import edu.wctc.beans.*;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class SalesReportApp {
     public static void main(String[] args) {
-        SalesReportTool tool = new SalesReportTool(new FileSalesInput(), new DelicatesShippingPolicy(), new DetailedSalesReport());
+        AnnotationConfigApplicationContext spring = new AnnotationConfigApplicationContext();
+        spring.register(AppConfig.class);
+        spring.refresh();
+
+        SalesReportTool tool = (SalesReportTool)spring.getBean("salesReportTool");
         tool.readSales();
         tool.applyShipping();
         tool.generateReport();

@@ -43,7 +43,7 @@ public class CountrySalesReport implements ISalesReport {
                 tax += sale.getTax();
             }
 
-            System.out.printf("|%15s|$%8.2f|$%8.2f|$%8.2f|%n", country, amount, shipping, tax);
+            System.out.printf("|%15s|$%8.2f|$%8.2f|$%8.2f|%n", country, amount, tax, shipping);
             System.out.println(tableBorder);
         }
     }
