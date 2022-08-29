@@ -5,5 +5,5 @@ import edu.wctc.objects.Sale;
 import java.util.List;
 
 public interface ISalesReport {
-    public void GenerateReport(List<Sale> salesList);
+    public void generateReport(List<Sale> salesList);
 }

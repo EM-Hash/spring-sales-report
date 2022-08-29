@@ -28,4 +28,8 @@ public class SalesReportTool {
             shippingPolicy.applyShipping(sale);
         }
     }
+
+    public void generateReport(){
+        report.generateReport(sales);
+    }
 }
