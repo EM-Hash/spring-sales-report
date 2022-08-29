@@ -9,7 +9,7 @@ import java.util.List;
 public class DetailedSalesReport implements ISalesReport {
     @Override
     public void generateReport(List<Sale> salesList) {
-        System.out.println("SALES DETAIL REPORT");
+        System.out.println("DETAILED SALES REPORT");
         String[] headers = {"Name", "Country", "Price", "Tax", "Shipping"};
         int width = 62;
         String tableBorder= String.format("+%" + width + "s+", "").replace(' ', '-');
